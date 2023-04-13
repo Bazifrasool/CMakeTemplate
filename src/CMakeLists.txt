@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.9.1)
+include_directories(${PROJECT_SOURCE_DIR}/inc)
+include_directories(${PROJECT_SOURCE_DIR}/lib/inc)
+set(EXECUTABLE_OUTPUT_PATH "${PROJECT_SOURCE_DIR}/build")
+add_executable(SFHFW.out main.c)
+target_link_libraries(SFHFW.out SFHLIB)

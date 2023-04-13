@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.9.1)
+include(CMakePrintHelpers)
+cmake_print_variables(PROJECT_SOURCE_DIR)
+add_library(SFHLIB STATIC temp.c)
+target_include_directories(SFHLIB PUBLIC ${PROJECT_SOURCE_DIR}/inc)
